@@ -100,14 +100,6 @@ function App() {
 </div>
         <div className="box3">
             <div className="head"><h2>Execute SQL Query</h2></div>
-            {/* <CodeMirror
-      d!');"
-      height="200px"
-      width='800px'
-      extensions={[javascript({ jsx: true })]}
-      onChange={(value, viewUpdate) =>alue);
-      }}
-    /> */}
             <div className="textfield"><input name="Query_area" id="Query_area" type="text" value={initial}></input></div>
             <div className="run"> <a href="#" className='btn' onClick={clickHandler}> Run </a> </div>
             <div className="clear">  <a href="#" className='btn' onClick={handleClear}> Clear </a> </div>
