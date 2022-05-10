@@ -9,6 +9,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import data from './data.json';
+import { fontWeight } from '@mui/system';
 
 
 
@@ -105,17 +106,19 @@ function App() {
             <div className="clear">  <a href="#" className='btn' onClick={handleClear}> Clear </a> </div>
             {inputCheck&&<div className='tableData'>
     <TableContainer component={Paper}>
-      <Table sx={{ minWidth: 670 }} size="small" aria-label="a dense table">
+      <Table className='table' sx={{ minWidth: 670 }} size="small" aria-label="a dense table">
         <TableHead>
-          <TableRow>
-            <TableCell>OrderId</TableCell>
-            <TableCell align="right">customerID</TableCell>
-            <TableCell align="right">employeeID</TableCell>
-            <TableCell align="right">orderedDate</TableCell>
-            <TableCell align="right">shippedDate</TableCell>
-            <TableCell align="right">freight</TableCell>
-            <TableCell align="right">shipName</TableCell>
-            <TableCell align="right">shipAddress</TableCell>
+          <TableRow sx={{
+            background:'#2980B9'
+          }}>  
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}}>OrderId</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">CustomerID</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">EmployeeID</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">OrderedDate</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">ShippedDate</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">Freight</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">ShipName</TableCell>
+            <TableCell sx={{color:"white", fontWeight:'bold', fontSize:16, fontStyle:'italic'}} align="right">ShipAddress</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -124,16 +127,16 @@ function App() {
               key={row.orderID}
               sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
             >
-              <TableCell component="th" scope="row">
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} component="th" scope="row">
                 {row.orderID}
               </TableCell>
-              <TableCell align="right">{row.customerID}</TableCell>
-              <TableCell align="right">{row.employeeID}</TableCell>
-              <TableCell align="right">{row.orderDate}</TableCell>
-              <TableCell align="right">{row.shippedDate}</TableCell>
-              <TableCell align="right">{row.freight}</TableCell>
-              <TableCell align="right">{row.shipName}</TableCell>
-              <TableCell align="right">{row.shipAddress}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.customerID}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.employeeID}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.orderDate}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.shippedDate}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.freight}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.shipName}</TableCell>
+              <TableCell sx={{color:"smokewhite", fontWeight:'500', fontSize:16, fontStyle:'italic'}} align="right">{row.shipAddress}</TableCell>
             </TableRow>
           ))}
         </TableBody>

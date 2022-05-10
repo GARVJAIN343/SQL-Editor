@@ -88,6 +88,7 @@ a{
   padding-top: 20px;
 }
 .run{
+ 
   width: 100px;
   height: 40px;
   text-align: center;
@@ -166,9 +167,14 @@ input:focus{
   grid-column-end: 2;
   margin-top: 15px;
 }
+
 input{
   color: #2980B9;
   font-size: 30px;
   text-align: center;
   font-style: italic;
+}
+.table{
+  background-color: #95dbf5;
+
 }
