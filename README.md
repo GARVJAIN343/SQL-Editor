@@ -1,8 +1,12 @@
 # Technology Used
-->HTML 
+->HTML
+
 ->CSS
+
 ->JavaScript
+
 ->React
+
 # Performance
 The app is pretty performant with Time to Interactive sitting at just 0.5s and the First Contentful Paint (FCP) is just 0.5s. This performance gain is achieved by the measures taken above. I have used lighthouse tool for calculating these times.
 
