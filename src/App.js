@@ -101,7 +101,7 @@ function App() {
 </div>
         <div className="box3">
             <div className="head"><h2>Execute SQL Query</h2></div>
-            <div className="textfield"><input name="Query_area" id="Query_area" type="text" value={initial}></input></div>
+            <div className="textfield"><input name="Query_area" id="Query_area" type="text" placeholder='Select Query from the list' value={initial}></input></div>
             <div className="run"> <a href="#" className='btn' onClick={clickHandler}> Run </a> </div>
             <div className="clear">  <a href="#" className='btn' onClick={handleClear}> Clear </a> </div>
             {inputCheck&&<div className='tableData'>
