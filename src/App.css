@@ -10,7 +10,6 @@ main{
   display:grid;
   grid-template-rows: 100px ;
   grid-template-columns:67%;
-  /* grid-row-gap: 10px; */
   background:whitesmoke;
 
 }
@@ -40,6 +39,7 @@ main{
   border-radius: 15px;
   margin-top: 90px;
   position: fixed;
+  font-style: italic;
 }
 .box3{
   width: 100%;
@@ -49,8 +49,10 @@ main{
   grid-template-columns:100%;
   background-image: -webkit-linear-gradient(#2980B9,#6DD5FA);
   margin-top: 90px;
-  margin-left: 495px;
+  margin-left: 50%;
   border-radius: 5px;
+
+
 }
 
 .query{
@@ -60,13 +62,17 @@ main{
   position: relative;
   width: 100%;  
   border-radius: 15px;
+  display: flex;
   padding: 10px;
-  font-style: italic;
+  justify-content:left;
+
 }
 
 a{
+  display: flex;
   text-decoration: none;
   color:#ffffff;
+  align-items: center;
 }
 .textfield{
   width: 80%;
@@ -79,16 +85,14 @@ a{
 
 .head{
   grid-column: 1/ -1;
-  margin: 0px auto;
+  margin: auto;
   font-size: 25px;
   color: white;
   font-style: italic;
   grid-row-start: 1;
   grid-row-end: 2;
-  padding-top: 20px;
 }
 .run{
- 
   width: 100px;
   height: 40px;
   text-align: center;
@@ -122,11 +126,10 @@ a{
 }
 
 .text{
-  padding-left: 5px;
-  text-align: left;
-  vertical-align: center;
-  position: relative;
+  display: flex;
   letter-spacing: 1px;
+  align-items: center;
+  padding-left: 5px;
   top: 20px;
 }
 .img{
@@ -135,6 +138,7 @@ a{
 }
 
 .text1{
+  
   color: white;
   font-size: 22px;
   position: relative;
@@ -149,10 +153,13 @@ a{
 }
 
 .btn{
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 23px;
   font-weight: 600;
   letter-spacing: 1px;
+  height: 90%;
   font-style: italic;
 }
 
@@ -167,14 +174,19 @@ input:focus{
   grid-column-end: 2;
   margin-top: 15px;
 }
-
 input{
   color: #2980B9;
   font-size: 30px;
   text-align: center;
   font-style: italic;
 }
-.table{
-  background-color: #95dbf5;
+div .query PlayCircleFilledOutlinedIcon .img a span .text{
+  text-align: justify;
+}
+::placeholder{
+  color:#6DD5FA;
+}
 
+Table{
+  background-color:#6DD5FA;
 }
