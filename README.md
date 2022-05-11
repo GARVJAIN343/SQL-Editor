@@ -1,3 +1,27 @@
+# Technology Used
+->HTML
+
+->CSS
+
+->JavaScript
+
+->React
+
+# Performance
+The app is pretty performant with Time to Interactive sitting at just 0.5s and the First Contentful Paint (FCP) is just 0.5s. This performance gain is achieved by the measures taken above. I have used lighthouse tool for calculating these times.
+
+The lighthouse performance score is as shown :-
+![Screenshot (52)](https://user-images.githubusercontent.com/63156944/167694281-61bbd076-b5ca-420b-9142-d71a06315525.png)
+![Screenshot (53)](https://user-images.githubusercontent.com/63156944/167694286-ec22e0d3-c7e1-486d-ad5f-6d43e41cd495.png)
+
+# ScreenShot
+![Screenshot (54)](https://user-images.githubusercontent.com/63156944/167694399-9898ad25-9073-44fd-8a11-0e3310b24dc5.png)
+![Screenshot (55)](https://user-images.githubusercontent.com/63156944/167694406-8c43df9d-e7c3-42e3-bbca-26cfe0c3691e.png)
+![Screenshot (57)](https://user-images.githubusercontent.com/63156944/167791840-ac6dcbc6-fd7f-4d81-a218-a58bfe23a274.png)
+![Screenshot (58)](https://user-images.githubusercontent.com/63156944/167791854-e49b39db-1c36-42e1-992d-54cd9eb4371e.png)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
